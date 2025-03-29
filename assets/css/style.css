@@ -1,0 +1,113 @@
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
+    font-size: 15px;
+    color: #161c2d;
+    background: #f5f5dc;
+}
+.row>* {
+    position: relative;
+}
+::selection {
+    background: #6c757d;
+    color: #fff
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+h4 {
+    font-size: 24px !important;
+}
+.section-title .title-box:before {
+    left: auto !important;
+    transform: rotate(225deg) !important;
+}
+.section-title .title-box:after, .section-title .title-box:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -7px;
+    left: 2px;
+    border: 2px solid #e54b4b;
+    border-radius: 30px 30px 30px 0;
+    transform: rotate(45deg);
+    left: calc(50% - 15px);
+}
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+}
+.section-title .title-box, .section-title .title-line {
+    position: relative;
+}
+.section-title .title-line:before {
+    left: calc(50% + 17px);
+}
+.section-title .title-line:after {
+    left: calc(50% - 45px);
+}
+
+.section-title .title-line:before, .section-title .title-line:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #e54b4b;
+}
+.para-desc {
+    max-width: 700px;
+}
+.text-muted {
+    color: #8492a6 !important;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.bg-light {
+    background-color: #f9fafd !important;
+}
+.rounded-pill {
+    border-radius: 30px !important;
+}
+.interests-desc {
+    transition: all 0.2s ease
+}
+
+.interests-desc .hobbies:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 55px;
+    background: #e9ecef;
+    z-index: 1
+}
+
+.interests-desc .icon {
+    width: 40px;
+    transition: all 0.2s ease
+}
+
+.interests-desc .title {
+    font-weight: 500
+}
+
+.interests-desc:hover {
+    background: #fff !important;
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    transform: translateY(-5px)
+}
+
+.interests-desc:hover .icon {
+    color: #e54b4b
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px !important
+    }
+}
